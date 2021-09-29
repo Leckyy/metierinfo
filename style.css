@@ -1,0 +1,44 @@
+nav ul{
+	list-style-type: none;
+	font-family: verdana;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li{
+	float: left;
+	width: 300px;
+	height: 75px;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 30px;
+
+}
+nav li{
+	display: block;
+	text-decoration: none;
+	background-color: grey;
+	color: white;
+}
+nav li:hover{
+	background-color: white;
+}
+.a1{
+	list-style-type: none;
+	font-family: verdana;
+	margin: 0px;
+	padding: 0px;
+	float: none;
+	width: 300px;
+	height: 75px;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 30px;
+	display: block;
+	text-decoration: none;
+	background-color: grey;
+	color: white;
+}
+.a1:hover{
+	background-color: white;
+}
