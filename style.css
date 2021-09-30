@@ -8,10 +8,11 @@ nav ul{
 nav li{
 	float: left;
 	width: 300px;
-	height: 75px;
+	height: 50px;
 	border: 1px solid black;
+	border-radius: 10px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 
 }
 nav li{
@@ -30,15 +31,7 @@ nav li:hover{
 	padding: 0px;
 	float: none;
 	width: 300px;
-	height: 75px;
-	border: 1px solid black;
-	text-align: center;
+	height: 40px;
 	font-size: 30px;
-	display: block;
-	text-decoration: none;
-	background-color: grey;
 	color: white;
-}
-.a1:hover{
-	background-color: white;
 }
