@@ -1,0 +1,53 @@
+table {
+	border: 3px solid #6495ed;
+	margin: auto;
+	width: 60%;
+}
+
+th{
+	border: 1px solid blue;
+	padding: 50px;
+	color: blue;
+	background: #BADBF0;
+	font-size: 2em;
+	height: 100px;
+}
+
+td{
+	border: 1px solid #000099;
+	padding: 5px;
+	text-align: center;
+	width: 45%;
+	height: 100px;
+} 
+
+.usa{
+	    background-image: url("usaaa.png");
+	    background-size: 100%;
+	    width: 25%;
+	    height: 100px;
+	    background-repeat: no-repeat;
+	    background-position: center ;
+}
+.france{
+		background-image:url("france.png");
+	 	background-size: 100%;
+	    width: 25%;
+	   	height: 100px;
+	   	background-repeat: no-repeat;
+	   	background-position: center;
+
+}
+h1{
+	font-size: 40px;
+	letter-spacing: 5px;
+	color: blue;
+}
+
+
+.th1{
+	font-size: 70px;
+	letter-spacing: 6px;
+
+
+}
