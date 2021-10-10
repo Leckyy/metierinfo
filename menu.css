@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
+
+.titree{
+	font-family: 'Birthstone', cursiv;
+	font-size: 24px;
+}
+
 body{
 	font-family: Verdana, Calibri, sans-serif;
 	margin: 0px;
@@ -16,6 +24,7 @@ appartenant à notre élément nav*/
 
 nav li{
 	list-style-type: none;
+	
 }
 
 /*On affiche seulement les éléments li correspondant à
@@ -85,7 +94,10 @@ nav li:hover .submenu{
 	color: #222538;
 	width: 270px;
 }
-
+.acceuilll:hover{
+	border-top: 5px solid #AEFF00;
+	background-color: rgba(255, 165, 0, 0.15);
+}
 .menu-html:hover{
 	border-top: 5px solid #e44d26;
 	background-color: RGBa(228, 77, 38, 0.15);
@@ -98,16 +110,24 @@ nav li:hover .submenu{
 
 .menu-js:hover{
 	border-top: 5px solid #f1dc4f;
-	background-color: RGBa(241, 211, 79 0.15);
+	background-color: RGBa(241, 211, 79, 0.15);
 }
 
 .menu-contact:hover{
-	border-top: 5px solid #bbb;
+	border-top: 5px solid skyblue;
 	background-color: RGBa(220, 220 ,220, 0.15);
+}
+.TP6:hover{
+	border-top: 5px solid #04FF5F;
+	background-color: rgba(46, 165, 54, 0.15);
 }
 
 nav > ul > li:hover a{
 	padding: 15px 30px 20px 30px; 
+}
+
+.acceuilll .submenu{
+	background-color: rgb(255, 165, 0,);
 }
 
 .menu-html .submenu{
@@ -118,6 +138,15 @@ nav > ul > li:hover a{
 }
 .menu-js .submenu{
 	background-color: rgb(251, 216, 99);
+}
+
+.menu-contact .submenu{
+	background-color:rgb(0, 102, 255);
+
+}
+.TP6 .submenu{
+	background-color:rgb(46, 168, 54);
+
 }
 
 .submenu li:hover a{
@@ -137,6 +166,13 @@ nav > ul > li:hover a{
 	background-color: rgb(200, 165, 75);
 }
 
+.menu-contact .submenu li:hover{
+	background-color: rgb(0, 224, 255);
+}
+.TP6 .submenu li:hover{
+	background-color: rgb(46, 217, 54);
+
+}
 .menu-mobile{
 	display: none;
 }
@@ -178,15 +214,167 @@ nav input[type=checkbox]:checked ~ ul{
 		position: static;
 	}
 }
+/*CSS pour la page d'acceuil*/
+
+.pacceuil{
+	width: 500px;
+}
 
 
 
 
 
 
+/* Css du développeur web du métierinfo*/
+
+.dw1p{
+	width: 800px;
+
+}
+
+/*CSS du développeur_application du métierinfo*/
+.da1p{
+	width: 800px;
+	font-size: 20px;
+
+}
+/*CSS du administrateur réseaux du métierinfo*/
+
+.adminr1p{
+	width: 800px;
+	font-size: 20px;
+}
 
 
+/*CSS du gestionaire de données du métierinfo*/
+
+.gestio1p{
+	width: 800px;
+	font-size: 20px;
+}
 
 
+/*CSS du tableau*/
+
+.classe_cellule{
+	border: 3px solid #6495ed;
+	margin: auto;
+	width: 50%;
+}
+
+.classe_cellule th{
+	border: 1px solid blue;
+	padding: 50px;
+	color: blue;
+	background: #BADBF0;
+	font-size: 2em;
+	height: 100px;
+}
+
+.classe_cellule td{
+	border: 1px solid #000099;
+	padding: 5px;
+	text-align: center;
+	width: 45%;
+	height: 100px;
+} 
+.usa{
+	    background-image: url("usaaa.png");
+	    background-size: 100%;
+	    width: 25%;
+	    height: 100px;
+	    background-repeat: no-repeat;
+	    background-position: center ;
+}
+.france{
+		background-image:url("france.png");
+	 	background-size: 100%;
+	    width: 25%;
+	   	height: 100px;
+	   	background-repeat: no-repeat;
+	   	background-position: center;
+
+}
+.titre_tab{
+	font-size: 40px;
+	letter-spacing: 5px;
+	color: blue;
+}
+
+
+.th1{
+	font-size: 70px;
+	letter-spacing: 6px;
+
+}
+/*CSS pour le CV*/
+
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=PT+Sans+Narrow&display=swap');
+
+.page_cv{
+	width: 680px;
+	margin: auto;
+	font-size: 16px;
+	border: 5px solid #12363F;
+	border-radius: 5px ;
+	box-shadow: 2px 4px 3px #12363F;
+	height: auto;
+	padding: 1em;
+}
+.gras_cv{
+	  font-weight: bold;
+}
+.entete_cv{
+	margin: 0 0 200px 0;
+}
+.info_cv{
+	float: left;
+	width: auto;
+	height: 150px;
+
+}
+.photo_cv{
+		float: right;
+		width: 150px;
+		height: 150px;
+}
+.img_cv{
+  width: 100%;
+  height: auto;
+}
+.section_cv{
+	font-family: Tahoma ;
+	margin: 0 0 5% 0;
+}
+.titre_cv{
+	font-size: 48px;
+	color: darkblue;
+	width: 100%;
+	font-family: 'Birthstone', cursive;
+text-shadow: 7px 0px 10px #01e4ff;
+border-radius: 20px;
+border: 5px solid;
+border-image: url(ap.gif) 100 / 5px / 0px stretch;
+}
+.information1_cv{
+	width: 20%;
+	padding: 4px;
+	font-family: 'Birthstone', cursive;
+	font-size: 21px;
+
+}
+.information2_cv{
+	padding: 4px;
+	width: 73%;
+}
+.categorie_cv{
+	font-weight: bold;
+}
+
+.align_cv{
+		display: flex;
+	align-items: stretch;
+}
 
 
