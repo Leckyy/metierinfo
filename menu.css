@@ -121,6 +121,10 @@ nav li:hover .submenu{
 	border-top: 5px solid #04FF5F;
 	background-color: rgba(46, 165, 54, 0.15);
 }
+.menu-java:hover{
+	border-top: 5px solid #00FFFB;
+	background-color: rgba(0, 255, 251, 0.15);
+}
 
 nav > ul > li:hover a{
 	padding: 15px 30px 20px 30px; 
@@ -149,6 +153,9 @@ nav > ul > li:hover a{
 
 }
 
+.menu-java .submenu{
+	background-color: rgb(40, 177, 175);
+}
 .submenu li:hover a{
 	color: #eee;
 	font-weight: bold;
@@ -173,6 +180,11 @@ nav > ul > li:hover a{
 	background-color: rgb(46, 217, 54);
 
 }
+.menu-java .submenu li: hover{
+	background-color: rgb(75, 180, 178);
+}
+
+
 .menu-mobile{
 	display: none;
 }
@@ -378,3 +390,23 @@ border-image: url(ap.gif) 100 / 5px / 0px stretch;
 }
 
 
+/*Css pour le tp2 en javascript*/
+
+.p1-java{
+	color: red;
+}
+
+.p2-java{
+	color: blue;
+}
+
+.tp2-java {
+	text-align: center;
+	border: 2px solid blue;
+	background-color: green;
+	width: 20%;
+	height: 200px;
+	margin: auto;
+	padding: 70px;
+
+}

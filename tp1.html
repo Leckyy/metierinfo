@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Menu responsive déroulant HTML</title>
-	<meta name="vieworp" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="menu.css">
+	<title></title>
 </head>
+<link rel="stylesheet" type="text/css" href="menu.css">
 <body>
 <nav>
     <label for="menu-mobile" class="menu-mobile">Menu</label>
@@ -60,63 +58,37 @@
 
 </nav>
 
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href=".css">
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    
+    var note1 = prompt("donner une première notes");    
+    var note2 = prompt("donner une deuxième notes");    
+    var note3 = prompt("donner une troisième notes");   
 
+    var somme = note1*2 + note2*2 + note3*3;
+    var moyenne = somme/7;
+    if (moyenne >= 10)
+        {document.write("Admis")
+        document.bgColor="green"}
+    else if (moyenne>=8)
+        {document.write("rattrapage")
+        document.bgColor="orange"}
+    else
+        {document.write("redoublant")
+        document.bgColor="red"}
 
+    document.write("<table border=2> <tr>");
+    document.write("<td> <h1> voilà votre somme :"+somme)+"</td> <br>";
+    document.write("<td> <h1> voilà votre moyenne :"+moyenne)+"</td>";
+    document.write("</tr> </table>");
 
-
-
-
-
-
-	<br>
-	<br><br>
-	<br>
-	<br>
-	<br>
-	<br><br>
-	<br>
-	<br>
-	<br>
-	<br><br>
-	<br>
-	<br>
-
-
-
-
-
-<nav>
-	<label for="menu-mobile" class="menu-mobile">Menu</label>
-	<input type="checkbox" id="menu-mobile" role="button">
-	<ul>
-		<li class="menu-html"><a href="">HTML</a>
-			<ul class="submenu">
-				<li><a href="">Cours HTML et CSS</a></li>
-				<li><a href="">Eléments HTML</a></li>
-				<li><a href="">Attributs HTML</a></li>
-				<li><a href="">Exercices</a></li>
-				
-			</ul>
-		</li>
-		<li class="menu-css"><a href="">CSS</a>
-			<ul class="submenu">
-				<li><a href="">Cours HTML et CSS</a></li>
-				<li><a href="">Propriétés CSS</a></li>
-				<li><a href="">Sélecteurs CSS</a></li>
-				<li><a href="">Exercices</a></li>
-			</ul>
-		</li>
-		<li class="menu-js"><a href="">JavaScript</a>
-			<ul class="submenu">
-				<li><a href="">Cours JavaScript</a></li>
-				<li><a href="">Fonctions JavaScript</a></li>
-				<li><a href="">Le DOM</a></li>
-				<li><a href="">Exercices</a></li>
-			</ul>
-		</li>
-		<li class="menu-contact"><a href="">Contact</a>
-		</li>			
-</ul>
-</nav>
+</script>
 </body>
 </html>
