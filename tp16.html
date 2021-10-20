@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="menu.css" href="cv.css">
+	<meta charset="utf-8">
 	<title></title>
-    <meta name="vieworp" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="menu.css">
 </head>
 <body background="fond1.jpg">
 
@@ -76,11 +75,26 @@
 
 <br>
 <br>
+<br>
+<center>
 
-<center><h1><u>Développeur application</u></h1></center>
-<center><img src="app.jpg" width="600" height="600"></center>
+<script type="text/javascript">
+	
+	var x = prompt("donnez une phrase");
+	
+var s=0;
 
-<center><p class="da1p">Le développeur d'applications mobiles est chargé de la réalisation technique d'une application, basée sur un cahier des charges précis. Il calcule et conçoit des programmes informatiques pour le traitement des données</p></center>
+	for (var i = 0; i<= x.length; i++) {
+
+		if (a=x.substr(i,1) == " ")
+		s = s + a;
+
+}
+
+document.write("Il y a  " + s + " espace dans la phrase");
+
+</script>
+</center>
 
 </body>
 </html>
