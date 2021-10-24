@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Tableau_Facture</title>
+<link rel="stylesheet" type="text/css" href="styletab_java.css">
+<script type="text/javascript" src="tableau_java.js"></script>
+
+</head>
+
+<body>
+
+
+<div class="rectangle"></div>
+
+<div class="entete_fond">
+<br>
+<br>
+
+<img class="photo" src="image0.jpg">
+	
+<div class="entete">
+<br>
+<br>
+&nbsp;&nbsp;<input type="text" name="p" placeholder="Nom de la compagnie"><br><br>
+&nbsp;&nbsp;<input type="text" name="m" placeholder="Adresse postale"><br><br>
+&nbsp;&nbsp;<input type="text" name="n" placeholder="Détail du contact">
+</div>
+
+<div class="entete2">
+&nbsp;&nbsp;<p>Facture</p>
+<br>
+
+<script type="text/javascript">
+var ladate=new Date()
+document.write("Nous sommes le : ");
+document.write(ladate.getDate()+"/"+(ladate.getMonth()+1)+"/"+ladate.getFullYear())
+</script>
+<br>
+<br>
+
+<input type="text" name="a2" placeholder="Nom de facture">
+</div>
+
+
+
+
+</div>
+
+
+<div class="dest">
+	
+<p><u><strong>Destinataire</strong></u></p>
+<input type="text" name="a3" placeholder="Nom"><br><br>
+<input type="text" name="a4" placeholder="Nom de societé"><br><br><input type="text" name="a5" placeholder="Adresse postale"><br><br>
+<input type="text" name="a6" placeholder="Téléphone"><br><br>
+<input type="text" name="a7" placeholder="E-Mail"><br><br>
+
+
+</div>
+
+<div class="envoi">
+	<p><u>Envoyer à</u></p>
+	<input type="text" name="a8" placeholder="Nom"><br><br>
+<input type="text" name="a9" placeholder="Nom de societé"><br><br><input type="text" name="a10" placeholder="Adresse postale"><br><br>
+<input type="text" name="a11" placeholder="Téléphone"><br><br>
+<input type="text" name="a12" placeholder="E-Mail"><br><br>
+
+
+
+
+
+
+
+
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<center>
+<div tab>
+		<form>
+<table class="tab"  border="1" width="68%" name="a">
+
+<tr>
+	<td class="titre_tab"><strong> Description:</strong></td>
+	<td class="titre_tab"><strong>Quantité:</strong></td>
+	<td class="titre_tab"><strong>Prix unitaire:</strong></td>
+	<td class="titre_tab"><strong>Total:</strong></td>
+</tr>
+
+<tr>
+	<td><input type="text" id="d1" name="desc"></td>
+	<td><input type="text" id="q1" name="qte" placeholder="0"></td>
+	<td><input type="text" id="p1" name="prix" placeholder="0"></td>
+	<td ><input class="fin" id="t1" type="text" name="total" placeholder="0"></td>
+</tr>
+
+
+<tr>
+	<td><input class="fond_tab" id="d2" type="text" name="desc"></td>
+	<td><input class="fond_tab" id="q2" type="text" name="qte" placeholder="0"></td>
+	<td><input class="fond_tab" id="p2" type="text" name="prix" placeholder="0"></td>
+	<td><input class="couleur" id="t2" type="text" name="total" placeholder="0"></td>
+</tr>
+
+<tr>
+	<td><input type="text" id="d3" name="desc"></td>
+	<td><input type="text" id="q3" name="qte" placeholder="0"></td>
+	<td><input type="text" id="p3" name="prix" placeholder="0"></td>
+	<td><input class="fin" id="t3" type="text" name="total" placeholder="0"></td>
+
+</tr>
+
+<tr>
+	<td><input class="fond_tab" id="d4" type="text" name="desc"></td>
+	<td><input class="fond_tab" id="q4" type="text" name="qte" placeholder="0"></td>
+	<td><input class="fond_tab" id="p4" type="text" name="prix" placeholder="0"></td>
+	<td><input class="couleur" id="t4" type="text" name="total" placeholder="0"></td>
+</tr>
+
+<tr>
+	<td><input type="text" id="d5" name="desc"></td>
+	<td><input type="text" id="q5" name="qte" placeholder="0"></td>
+	<td><input type="text" id="p5" name="prix" placeholder="0"></td>
+	<td><input class="fin" id="t5" type="text" name="total" placeholder="0"></td>
+</tr>
+
+<tr>
+	<td><input class="fond_tab" id="d6" type="text" name="desc"></td>
+	<td><input class="fond_tab" id="q6" type="text" name="qte" placeholder="0"></td>
+	<td><input class="fond_tab" id="p6" type="text" name="prix" placeholder="0"></td>
+	<td><input class="couleur" id="t6" type="text" name="total" placeholder="0"></td>
+</tr>
+
+<tr>
+	<td><input type="text" id="d7" name="desc"></td>
+	<td><input type="text" id="q7" name="qte" placeholder="0"></td>
+	<td><input type="text" id="p7" name="prix" placeholder="0"></td>
+	<td><input class="fin" id="t7" type="text" name="total" placeholder="0"></td>
+</tr>
+
+<tr>
+	<td><input class="fond_tab" id="d8" type="text" name="desc"></td>
+	<td><input class="fond_tab" id="q8" type="text" name="qte" placeholder="0"></td>
+	<td><input class="fond_tab" id="p8" type="text" name="prix" placeholder="0"></td>
+	<td><input class="couleur" id="t8" type="text" name="total" placeholder="0"></td>
+</tr>
+
+<tr>
+	<td><input type="text" id="d9" name="desc"></td>
+	<td><input type="text" id="q9" name="qte" placeholder="0"></td>
+	<td><input type="text" id="p9" name="prix" placeholder="0"></td>
+	<td><input class="fin" id="t9" type="text" name="total" placeholder="0"></td>
+</tr>
+
+<tr>
+	<td><input class="fond_tab" id="d10" type="text" name="desc"></td>
+	<td><input class="fond_tab" id="q10" type="text" name="qte" placeholder="0"></td>
+	<td><input class="fond_tab" id="p10" type="text" name="prix" placeholder="0"></td>
+	<td><input class="couleur" id="t10" type="text" name="total" placeholder="0"></td>
+</tr>
+
+
+</table>
+</center>
+</div>
+
+<center>
+<table class="réponse"  border="0" width="68%">
+	
+	<tr>
+		<td><strong>Remarque,notes et instructions de paiement:</strong></td>
+		<td></td>
+		<td class="arg">SOUS TOTAL</td>
+		<td><input type="text" name="sous-total" id="st1" class="input" value="0.00"></td>
+		
+	</tr>
+
+	<tr>
+		<td></td>
+		<td></td>
+		<td class="arg" >REMISE</td>
+		<td><input type="text" name="remise" id="r1" class="input" value="0.00"></td>
+		
+	</tr>
+
+	<tr>
+		<td></td>
+		<td></td>
+		<td class="arg">SOUS TOTAL MOINS LES REMISE</td>
+		<td><input type="text" name="st_remise" id="st_r1" value="0.00" readonly="readonly"></td>
+		
+	</tr>
+
+	<tr>
+		<td></td>
+		<td></td>
+		<td class="arg">TAUX D'IMPOSITION</td>
+		<td><input type="text" name="taux_impot" id="ti1" class="input" value="0.00%"></td>
+		
+	</tr>
+
+<tr>
+		<td></td>
+		<td></td>
+		<td class="arg">TAXE TOTAL</td>
+		<td><input type="text" name="taxe_total" id="tt1" value="0.00" readonly="readonly"></td>
+		
+</tr>
+
+
+<tr>
+		<td></td>
+		<td></td>
+		<td class="arg">EXPEDITION,MANUTENTION</td>
+		<td><input type="text" name="exp_man" id="e_m1" class="input" value="0.00"></td>
+		
+</tr>
+
+<tr>
+		<td></td>
+		<td></td>
+		<td class="arg">SOLDE DU</td>
+		<td ><input type="text" name="solde" id="solde" value="0.00€" readonly="readonly"></td>
+
+
+		
+</tr>
+
+
+
+
+</table>
+
+
+<table>
+	<tr>
+		<td><input type="button" value="Calculer" onclick="calculate()"></td></td>
+		<td><input type="button" value="Le Code Source" onclick="access()"></td>
+		<td><input type="reset" name="k"></td>
+
+
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+</center>
+
+<br>
+
+
+<div class="rectangle"></div>
+
+
+
+
+</form>
+
+
+</body>
+</html>
