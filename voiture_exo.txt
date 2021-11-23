@@ -158,7 +158,10 @@ ex20
 
 
 
-
+INSERT INTO voiture(`immatriculation`, `marque`, `module`, `kilometrage`, `carburant` ,`couleur`, `nbr_place`, `nbr_porte`,`etat`, `prix_achat`) VALUES
+('69 CP 2000','Dodge','supercharger',10000,'essence','noire',2,3,'bon état',30 000),
+('54 TG 3000','toyota','supra',30000,'essence','noire',2,3,'bon etat',20000),
+('91 JG 6666','subaru','mk4',30000,'essence','noire',2,3,'bon etat',2000)
 
 
 
