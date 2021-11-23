@@ -1,0 +1,170 @@
+CREATE table reparation
+( id INT PRIMARY KEY NOT NULL,
+Num_reparation VARCHAR(20),
+date_reparation VARCHAR(20),
+duree_reparation VARCHAR(20),
+cout_reparation  VARCHAR(20),
+responsable_recuperation  VARCHAR(20),
+immatriculation INT)
+
+
+
+
+ex1
+
+Select*
+From voiture
+
+ex2
+
+Select*
+From voiture
+Order by immatriculation
+
+ex3
+
+SELECT*
+from voiture
+Order by marque,module
+
+ex4
+
+SELECT*
+from voiture
+Where marque= "Tesla"
+
+ex5
+
+SELECT Lower (marque),lower (module)
+from voiture
+Where marque = "Tesla"
+
+ex6
+
+SELECT Lower (marque),lower (module)
+from voiture
+Where marque = "Tesla"
+
+ex7
+
+ALTER TABLE voiture
+ADD prix_achat INT
+
+ex8
+
+SELECT * 
+FROM `voiture`
+Where prix_achat <20000 and prix_achat>15000
+
+
+ex8 2ème partie
+
+SELECT * 
+FROM `voiture`
+Where prix_achat between 15000 and 20000
+
+
+ex9
+
+SELECT AVG (`kilometrage`)
+From voiture
+where marque= "Mercedes"
+
+ex10
+
+Select Count(*)
+From voiture
+Where marque="Tesla"
+
+
+ex11
+
+Select Count(*)
+From voiture
+Where couleur="noire"
+
+ex12 premier partie
+
+Select Count(*)
+From voiture
+Groupe BY marque 1
+
+
+
+
+ex12 2eme partie
+
+Select marque, Count(*)
+From voiture
+Groupe BY marque 1
+
+
+
+
+ex13
+
+SELECT MAX(kilometrage)
+From voiture
+
+ex14
+
+Select marque,module,immatriculation
+From voiture
+Where kilometrage = (SELECT MAX(kilometrage)From voiture)
+
+ex15
+
+Select marque,module,immatriculation
+From voiture
+Where kilometrage = (SELECT MIN(kilometrage)From voiture)
+
+
+ex16 premier partie
+
+SELECT*
+From client
+Where ville="paris" OR ville="nice"
+
+ex16 2eme partie
+
+SELECT*
+From client
+Where ville="paris" OR "nice"
+
+ex17
+
+SELECT SUM(prix_achat)
+From voiture
+Where "marque"="Mercedes"
+
+
+
+ex18
+SELECT code_client,ville
+From client
+Where nom_prenom like "y%"
+
+
+ex19
+
+
+INSERT INTO voiture(immatriculation,marque,module,kilometrage,carburant,couleur,nbr_place,nbr_porte,etat,prix_achat) VALUES
+('69 CP 2000','Dodge','supercharger','10000','essence','noire','2','3','bon état','30 000'),
+('54 TG 3000','toyota','supra','30000','essence','noire','2','3','bon etat','20000'),
+('91 JG 6666','subaru','mk4','30000','essence','noire','2','3','bon etat','2000')
+
+
+ex20
+
+
+
+
+
+
+
+
+
+
+
+
+
