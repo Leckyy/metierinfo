@@ -1,0 +1,24 @@
+ex1
+
+SELECT V.kilometrage, V.modele, V.marque
+FROM voitures V
+JOIN location L ON ( V.immatriculation = L.immatriculation )
+WHERE L.date_locations
+BETWEEN "2021-11-01"
+AND "2021-11-30"
+
+
+
+
+
+ex2
+
+UPDATE Voiture
+SET prix_achat=45800
+Where marque="Tesla"
+
+ex3
+
+UPDATE client
+SET adresse =21 Avenue de strasbourg
+Where nom_prenom ='Yasmine'

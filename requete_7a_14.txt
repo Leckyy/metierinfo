@@ -1,0 +1,64 @@
+ex7
+
+SELECT V.marque Lcode_client
+FROM voiture V
+JOIN Location  L ON(V.immatriculation= L.immatriculation)
+WHERE L.code_client='t200'
+
+
+ex8
+
+SELECT C.nom,C.adresse,L.immatriculation* 
+FROM clientsC
+JOIN location L ON(C.code_client= Lcode_client) 
+WHERE L.immatriculation='22tu22'
+
+
+ex9
+
+SELECT v.immatriculation,v.kilometrage,v.marque
+FROM voiture v
+JOIN location L ON(v.immatriculation=L.immatriculation)
+WHERE L.prix_location<60
+
+ex10
+
+SELECT V.kilometrage,V,modele,V.marque
+FROM voiture V
+JOIN location L ON(V,immatriculation = L.immatriculation)
+WHERE Ldate_location between"2021-11-01" and "2021-11-30"
+
+
+ex11
+
+SELECT Cnom_prenom,C_adresse 
+FROM client C
+JOIN location L ON(C.code_client = L.code_client)
+JOIN voiture V ON(L.immatriculation = V.immatriculation)
+WHERE V.marque == 'Tesla'
+
+
+
+ex12
+
+DELETE
+FROM voiture
+Where marque ='Audi'
+
+ex13
+
+ALTER TABLE clients
+DROP code_postal
+
+
+ex14
+
+SELECT marque
+From voiture
+WHERE upper(marque) like 'T%'
+
+Ou
+
+SELECT nom_prenom
+From client
+WHERE upper(nom_prenom) like'R%4
