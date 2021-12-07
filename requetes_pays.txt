@@ -1,0 +1,42 @@
+1
+SELECT sum(population_2010)
+FROM communes
+
+
+2
+SELECT Count(*)
+FROM communes
+WHERE num_departement ='91'
+
+3
+SELECT *
+Order By Surface LIMIT 2; 
+
+4
+SELECT Nom_commune, population_2010 
+FROM Communes 
+Order by  population_2010 DESC LIMIT 2  
+
+5
+SELECT Nom_commune, population_2010/surface As densite
+FROM communes 
+Order By densite DESC limit 2 
+
+
+6
+SELECT num_departement, count(*) as nb_communes
+from communes Group by num_departement 
+
+7
+SELECT num_departement, SUM(population_2010) AS population 
+FROM communes Group by num_departement 
+Having population > 100000 Order by population DESC;  
+
+
+8
+SELECT departement.nom, region.nom
+from departement 
+JOIN ON REGION (departement.num_region = region.num_region)
+WHERE
+Region.nom_region = ‘Ile de France’ OR  Region.nom_region = ‘Pays de la loire’
+
